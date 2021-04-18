@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+
+
+.main-signup{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    justify-content: center;
+    height: 450px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.signup-form{
+    overflow: hidden;
+    box-shadow:var(--clr-gray-light);
+    background: -webkit-linear-gradient(45deg, #434343, #000000);
+    background: linear-gradient(45deg, #434343, #000000);
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+}
+
+.signup-form input{
+    border: none;
+    outline: none;
+}
+
+.signup-btn{
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    background-color:#05386b;
+    outline: none;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 50px;
+  }
+
+  .signup-btn:hover{
+      background-color:crimson;
+  }
+
+  .name{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  .description{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+ 
+
+  .signh{
+      color:white;
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 50px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 400;
+  }
+
+
+
+  .modal-bg{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.err-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    width: 35%;
+    height: 20vh;
+    border-radius: 10px;
+    font-weight: bold;
+    /* background: rgba(0, 0, 0, 0.9) ; */
+    background: -webkit-linear-gradient(45deg, #434343, #000000);
+    background: linear-gradient(45deg, #434343, #000000);
+}
+
+.err-modal .err-close{
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    outline: none;
+    border: none;
+    background: #333232;
+    color: beige;
+    transition: all ease-in-out 300ms;
+}
+.err-modal .err-close:hover{
+    background: #05386b;
+}
+
+.success-msg{
+    color: green !important;
+}
+
+
+.ok{
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%);
+    background-color:white;
+    color:#251f47;
+    border:none;
+    outline:none;
+}
+.ok a{
+    text-decoration:none;
+}
